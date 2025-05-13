@@ -15,20 +15,15 @@ const Hero = () => {
             </h1>
             <div className="mt-4">
               <p className="text-xl md:text-2xl text-slate-600">
-                IT Service Desk | Cybersecurity | Cloud (AWS) | Customer Success Manager
+                |Technical Customer Support| IT Service Desk | Customer Success Manager| Applications Support | Cloud (AWS & Microsoft Azure) | Driving Secure, Inclusive Digital Solutions | Empowering Global Teams & Digital Equity
               </p>
               <p className="text-md md:text-lg text-blue-600 font-medium mt-1">
-                99.7% Uptime Expert | Driving Secure, Inclusive Digital Solutions
+                Delivering Reliable IT Support and Proactive Monitoring for Business Success
               </p>
             </div>
             <div className="mt-6 bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg shadow-sm">
               <p className="text-slate-700 leading-relaxed">
-                A dynamic IT Service Desk and Cybersecurity Professional with over 16 years of progressive experience 
-                in the banking and financial services sector. Combining 7+ years in IT operations with 7 years as a 
-                Relationship Manager, I bring a unique blend of technical expertise and customer-focused skills to every 
-                role. Adept in ITIL-based support, cloud solutions (AWS), DevSecOps, and implementing secure, scalable 
-                systems. Now leveraging emerging skills in data science and cybersecurity to promote inclusive digital 
-                transformation while seeking opportunities to drive user satisfaction and operational excellence.
+                Experienced IT and Service Management Professional with over 7 years of hands-on expertise in IT operations, cloud computing, and system administration, complemented by an additional 7 years as a Relationship Manager in the banking sector. This powerful combination of technical acumen and customer-facing experience enables the delivery of tailored, scalable, and secure solutions that align with client needs. Known for enhancing service delivery, streamlining support processes, and fostering user satisfaction through a blend of innovation and empathy. Adept at translating complex systems into meaningful customer experiences and driving operational excellence across diverse environments.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-4">

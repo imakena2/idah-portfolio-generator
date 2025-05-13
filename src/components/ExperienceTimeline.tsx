@@ -8,8 +8,8 @@ const experiences = [
   {
     title: "Educational Break",
     company: "Various Institutions",
-    period: "Dec 2023 – Dec 2024",
-    description: "Undertook a professional development break to earn certifications in Data Analysis, Data Science, Cloud Computing, and secure software development to enhance technical expertise and career progression.",
+    period: "Dec 2023 – Ongoing",
+    description: "Took a professional break to complete certifications, gaining expertise in data analysis, AI & machine learning, cloud solutions, and secure software development for career advancement.",
     highlights: [],
   },
   {
@@ -21,8 +21,8 @@ const experiences = [
       "Spearheaded ETL optimization projects, achieving a 99.7% uptime for critical financial systems.",
       "Automated COB processing, reducing processing time by 13%, significantly improving operational efficiency.",
       "Standardized IT operations across four countries, resulting in streamlined processes and improved cross-border collaboration.",
-      "Generated weekly system uptime and transaction performance reports.",
-      "Collaborated with ATM custodians and L1 support engineers to resolve errors.",
+      "Led a team to integrate cloud-based tools, driving a 17% increase in system reliability.",
+      "Developed cloud-driven workflows that enhanced reporting accuracy, meeting regulatory requirements with zero delays.",
       "Partnered with virtual teams to deploy a new financial application system, delivering the project two weeks ahead of schedule.",
       "Improved troubleshooting protocols, enabling the resolution of high-priority incidents within an average of 4 hours."
     ],
@@ -33,12 +33,11 @@ const experiences = [
     period: "Aug 2018 – Dec 2022",
     description: "",
     highlights: [
-      "Provided Level 1 and 2 support for enterprise applications.",
-      "Managed daily monitoring of IT systems ensuring 99.7% uptime.",
+      "Consistently delivered first-contact resolution for 94% of support tickets by efficiently diagnosing and addressing technical issues, ensuring seamless business operations with minimal downtime.",
       "Designed and implemented virtual training programs that reached over 200 users, leading to a 27% decrease in help desk inquiries and significantly improving user proficiency.",
       "Strengthened identity and access management (IAM) protocols by enforcing stringent security measures, which led to a 12% reduction in vulnerabilities identified during regular audits.",
       "Worked closely with cloud service providers to optimize application configurations, resulting in an 18% improvement in load times for critical business applications.",
-      "Used monitoring tools to analyze load times and optimize application performance."
+      "Automated critical troubleshooting scripts, which reduced the average incident response time by approximately 6 minutes, enhancing service efficiency."
     ],
   },
   {
@@ -47,9 +46,9 @@ const experiences = [
     period: "Jan 2017 – Jul 2018",
     description: "",
     highlights: [
-      "Introduced RCA framework that reduced repeat incidents by 23%.",
-      "Led a 6-member service desk team ensuring SLA compliance.",
-      "Created escalation workflows for ATM outages and high-priority issues."
+      "Spearheaded the introduction of root cause analysis frameworks, which reduced recurring incidents by 23% within just six months, improving service reliability.",
+      "Implemented advanced cloud-based monitoring tools, increasing the rate of early incident detection by 39% and preventing critical service disruptions.",
+      "Successfully managed and mentored a geographically distributed team of six IT specialists, ensuring consistent adherence to service level agreements (SLAs) across all supported locations."
     ],
   },
   {
@@ -58,8 +57,8 @@ const experiences = [
     period: "Sept 2015 – Dec 2016",
     description: "",
     highlights: [
-      "Logged, tracked, and resolved ATM and IT-related issues.",
-      "Maintained 98% SLA adherence in service desk responses.",
+      "Maintained an impressive 98% SLA compliance rate by standardizing and refining incident response protocols across multiple departments, ensuring timely service delivery.",
+      "Provided effective remote IT support for over 50 bank branches, ensuring uninterrupted business operations across the organization's wide network.",
       "Collaborated with team members to streamline processes, achieving a 19% reduction in ticket resolution times, which significantly enhanced overall user experience."
     ],
   },

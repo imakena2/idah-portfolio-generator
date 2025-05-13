@@ -11,8 +11,13 @@ const About = () => {
             <h2 className="text-3xl font-bold text-slate-800 mb-6">About Me</h2>
             <div className="space-y-4 text-slate-600">
               <p>
-                I am a detail-oriented IT Service Desk and Monitoring Specialist with over 7 years of experience in IT operations, 
-                system monitoring, incident management, and technical support primarily within the banking and financial sector.
+                Experienced IT and Service Management Professional with 7+ years in IT operations, cloud computing, 
+                and system administration, combined with another 7 years as a Relationship Manager in the banking industry.
+              </p>
+              <p>
+                This unique blend of technical expertise and customer-facing experience has shaped a strong ability 
+                to understand client needs, manage expectations, and deliver tailored solutions. Adept at enhancing 
+                service delivery, streamlining support processes, and implementing secure, scalable systems.
               </p>
               <p>
                 Throughout my career at Kenya Commercial Bank Group, I've held various roles of increasing responsibility, 
@@ -22,10 +27,6 @@ const About = () => {
               <p>
                 I'm also the founder of Tech Ace Solutions, where we provide innovative IT solutions to businesses. My team and I 
                 are committed to leveraging technology to solve real-world problems and enhance operational efficiency.
-              </p>
-              <p>
-                Recently, I've undertaken a professional development break to enhance my skills in Data Science, DevSecOps, 
-                AWS Cloud Computing, and Web Development, obtaining certifications that complement my extensive IT background.
               </p>
             </div>
             <div className="mt-8">
@@ -38,8 +39,18 @@ const About = () => {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold text-slate-800 mb-6">Tech Ace Solutions</h2>
             <div className="bg-gradient-to-br from-blue-50 to-slate-100 rounded-lg p-6 shadow-sm">
+              <div className="flex items-center justify-center mb-6">
+                <img 
+                  src="/lovable-uploads/704c97b6-2b36-4210-b9d4-da25146deef8.png" 
+                  alt="Tech Ace Solutions Logo" 
+                  className="h-16"
+                />
+              </div>
               <h3 className="text-xl font-semibold text-blue-600 mb-3">Founder & CEO</h3>
               <div className="space-y-4 text-slate-600">
+                <p>
+                  "My mission is to bring smart digital solutions to businesses and equip rural youth and women with tech skills for a brighter future."
+                </p>
                 <p>
                   As the founder of Tech Ace Solutions, I lead a team of dedicated IT professionals providing enterprise-grade 
                   solutions to businesses across various sectors.

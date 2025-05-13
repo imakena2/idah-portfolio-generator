@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const projects = [
   {
@@ -8,14 +9,35 @@ const projects = [
     description: "A full-stack web application simulating a real-world IT service desk environment. Built using Django (Python), SQL, HTML, and CSS with functionality for ticket logging, categorization, SLA tracking, and issue resolution monitoring.",
     tags: ["Python", "Django", "SQL", "HTML", "CSS", "ITIL"],
     link: "https://github.com/imakena2/supportPulse",
-    image: ""
+    logo: "/lovable-uploads/0a5182f7-522c-4034-bc7d-3fddd22f0c03.png"
   },
   {
     title: "Tech Ace Solutions",
     description: "Company website showcasing IT infrastructure management, cloud migration, cybersecurity consulting, and custom software development services offered by the company.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     link: "https://imakena2.github.io/techace-website/index.html",
-    image: ""
+    logo: "/lovable-uploads/704c97b6-2b36-4210-b9d4-da25146deef8.png"
+  },
+  {
+    title: "Mwethe Clinic Booking System",
+    description: "SQL-based clinic system managing patients, doctors, and appointments using foreign keys and advanced database relationships.",
+    tags: ["MySQL", "Database Design", "Healthcare IT"],
+    link: "#",
+    logo: ""
+  },
+  {
+    title: "EduConnect - STEM Parent Teacher App",
+    description: "A text-based education management tool for parent-teacher collaboration and STEM learning designed to improve communication and student outcomes.",
+    tags: ["Education Tech", "Communication", "STEM"],
+    link: "#",
+    logo: ""
+  },
+  {
+    title: "COVID-19 Global Data Tracker",
+    description: "A Python-based data analysis project tracking COVID-19 trends in Kenya, USA, India, and China with visualizations and statistical analysis.",
+    tags: ["Python", "Data Analysis", "Visualization", "Statistics"],
+    link: "#",
+    logo: ""
   }
 ];
 
@@ -25,9 +47,19 @@ const ProjectShowcase = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow">
-            <div className="aspect-video relative bg-blue-100 flex items-center justify-center">
-              <div className="text-4xl font-bold text-blue-300">{project.title.substring(0, 1)}</div>
-            </div>
+            {project.logo ? (
+              <AspectRatio ratio={16/9} className="bg-white flex items-center justify-center p-4">
+                <img 
+                  src={project.logo} 
+                  alt={`${project.title} logo`} 
+                  className="h-24 object-contain"
+                />
+              </AspectRatio>
+            ) : (
+              <div className="aspect-video relative bg-blue-100 flex items-center justify-center">
+                <div className="text-4xl font-bold text-blue-300">{project.title.substring(0, 1)}</div>
+              </div>
+            )}
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
             </CardHeader>

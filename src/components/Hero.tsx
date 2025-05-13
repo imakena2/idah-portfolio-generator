@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Hero = () => {
   return (
@@ -16,9 +17,7 @@ const Hero = () => {
               IT Service Desk & Monitoring Specialist | Tech Entrepreneur
             </p>
             <p className="mt-6 text-slate-600 max-w-xl">
-              Detail-oriented IT professional with 7+ years of experience in the banking and financial sector. 
-              Focused on system monitoring, incident management, and technical support with expertise in ensuring 
-              system uptime and SLA compliance.
+              "My mission is to bring smart digital solutions to businesses and equip rural youth and women with tech skills for a brighter future."
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link to="/experience">
@@ -35,10 +34,14 @@ const Hero = () => {
             </div>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-lg max-w-md w-full">
-            <div className="aspect-square rounded-lg bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-              <span className="text-6xl font-bold text-blue-600">IM</span>
-            </div>
-            <div className="mt-4 flex items-center justify-center space-x-4">
+            <AspectRatio ratio={1/1} className="rounded-lg overflow-hidden mb-4">
+              <img 
+                src="/lovable-uploads/48106636-bfe3-4c7a-8280-1b8035a035a8.png" 
+                alt="Idah Makena Ncooro" 
+                className="object-cover w-full h-full"
+              />
+            </AspectRatio>
+            <div className="flex items-center justify-center space-x-4">
               <a href="https://www.linkedin.com/in/imakena/" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-blue-600 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
               </a>

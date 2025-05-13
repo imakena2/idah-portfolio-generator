@@ -22,6 +22,10 @@ const skillCategories = [
     name: "Development",
     skills: ["Automation Scripting", "Python", "HTML", "CSS", "SQL", "Web Development"]
   },
+  {
+    name: "Customer Relations",
+    skills: ["User Experience", "Customer Engagement", "Digital Transformation", "Client Communication", "Process Optimization"]
+  }
 ];
 
 const Skills = () => {

@@ -19,6 +19,20 @@ const projects = [
     logo: "/lovable-uploads/704c97b6-2b36-4210-b9d4-da25146deef8.png"
   },
   {
+    title: "AWS S3 Static Website Hosting",
+    description: "A cloud infrastructure project demonstrating how to host a static website using Amazon S3, implementing cost-effective and scalable hosting solutions with proper security configurations.",
+    tags: ["AWS", "S3", "Cloud Computing", "DevOps", "IaC"],
+    link: "https://github.com/imakena2/Hosting-Static-Website-using-AWS-S3.git",
+    logo: ""
+  },
+  {
+    title: "CyberRisk Assessment Toolkit for SMEs",
+    description: "A comprehensive cybersecurity toolkit designed specifically for small to medium-sized enterprises, providing affordable risk assessment frameworks and implementation guidance.",
+    tags: ["Cybersecurity", "Risk Assessment", "SME", "Security Framework"],
+    link: "https://github.com/imakena2/ASSESSMENT-TOOLKIT-FOR-SMES.git",
+    logo: ""
+  },
+  {
     title: "Mwethe Clinic Booking System",
     description: "SQL-based clinic system managing patients, doctors, and appointments using foreign keys and advanced database relationships.",
     tags: ["MySQL", "Database Design", "Healthcare IT"],

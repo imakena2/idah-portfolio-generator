@@ -27,8 +27,6 @@ This site is a professional, personal portfolio designed to highlight my:
 - **HTML5**
 - **TypeScript** (`main.tsx`)
 - **Inter Font (Google Fonts)**
-- **Lovable.dev Platform**
-- **GPTEngineer Integration**
 
 ## 🧠 How It Works
 

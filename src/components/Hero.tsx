@@ -13,9 +13,14 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight">
               Idah Makena Ncooro
             </h1>
-            <p className="mt-4 text-xl md:text-2xl text-slate-600">
-              IT Service Desk & Cybersecurity Professional | Tech Entrepreneur
-            </p>
+            <div className="mt-4">
+              <p className="text-xl md:text-2xl text-slate-600">
+                IT Service Desk | Cybersecurity | Cloud (AWS) | Customer Success Manager
+              </p>
+              <p className="text-md md:text-lg text-blue-600 font-medium mt-1">
+                99.7% Uptime Expert | Driving Secure, Inclusive Digital Solutions
+              </p>
+            </div>
             <div className="mt-6 bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg shadow-sm">
               <p className="text-slate-700 leading-relaxed">
                 A dynamic IT Service Desk and Cybersecurity Professional with over 16 years of progressive experience 

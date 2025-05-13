@@ -43,3 +43,7 @@ The portfolio leverages:
 ```html
 <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
 
+🧾 Author
+Idah Makena Ncooro
+IT Service Desk & Monitoring Specialist
+📧 imakena@gmail.com

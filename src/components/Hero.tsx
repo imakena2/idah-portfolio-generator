@@ -14,11 +14,18 @@ const Hero = () => {
               Idah Makena Ncooro
             </h1>
             <p className="mt-4 text-xl md:text-2xl text-slate-600">
-              IT Service Desk & Monitoring Specialist | Tech Entrepreneur
+              IT Service Desk & Cybersecurity Professional | Tech Entrepreneur
             </p>
-            <p className="mt-6 text-slate-600 max-w-xl">
-              "My mission is to bring smart digital solutions to businesses and equip rural youth and women with tech skills for a brighter future."
-            </p>
+            <div className="mt-6 bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg shadow-sm">
+              <p className="text-slate-700 leading-relaxed">
+                A dynamic IT Service Desk and Cybersecurity Professional with over 16 years of progressive experience 
+                in the banking and financial services sector. Combining 7+ years in IT operations with 7 years as a 
+                Relationship Manager, I bring a unique blend of technical expertise and customer-focused skills to every 
+                role. Adept in ITIL-based support, cloud solutions (AWS), DevSecOps, and implementing secure, scalable 
+                systems. Now leveraging emerging skills in data science and cybersecurity to promote inclusive digital 
+                transformation while seeking opportunities to drive user satisfaction and operational excellence.
+              </p>
+            </div>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link to="/experience">
                 <Button className="bg-blue-600 hover:bg-blue-700">

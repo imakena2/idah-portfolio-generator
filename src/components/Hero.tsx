@@ -15,7 +15,7 @@ const Hero = () => {
             </h1>
             <div className="mt-4">
               <p className="text-xl md:text-2xl text-slate-600">
-                |Technical Customer Support| IT Service Desk | Customer Success Manager| Applications Support | Cloud (AWS & Microsoft Azure) | Driving Secure, Inclusive Digital Solutions | Empowering Global Teams & Digital Equity
+                |Technical Customer Support| IT Service Desk | Customer Success Manager| IT Service Desk | Cybersecurity | Cloud (AWS) | 99.7% Uptime Expert | Driving Secure, Inclusive Digital Solutions | Empowering Global Teams & Digital Equity
               </p>
               <p className="text-md md:text-lg text-blue-600 font-medium mt-1">
                 Delivering Reliable IT Support and Proactive Monitoring for Business Success

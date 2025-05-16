@@ -1,8 +1,7 @@
-
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Database, Shield, PieChart, GraduationCap, Stethoscope } from "lucide-react";
+import { Database, Shield, PieChart, GraduationCap, Stethoscope, Cloud, Virus } from "lucide-react";
 
 const projects = [
   {
@@ -17,7 +16,7 @@ const projects = [
     description: "A cloud infrastructure project demonstrating how to host a static website using Amazon S3, implementing cost-effective and scalable hosting solutions with proper security configurations.",
     tags: ["AWS", "S3", "Cloud Computing", "DevOps", "IaC"],
     link: "https://github.com/imakena2/Hosting-Static-Website-using-AWS-S3.git",
-    icon: <Database className="h-16 w-16 text-orange-500" />
+    icon: <Cloud className="h-16 w-16 text-orange-500" />
   },
   {
     title: "CyberRisk Assessment Toolkit for SMEs",
@@ -45,7 +44,7 @@ const projects = [
     description: "A Python-based data analysis project tracking COVID-19 trends in Kenya, USA, India, and China with visualizations and statistical analysis.",
     tags: ["Python", "Data Analysis", "Visualization", "Statistics"],
     link: "#",
-    icon: <Database className="h-16 w-16 text-red-600" />
+    icon: <Virus className="h-16 w-16 text-red-600" />
   }
 ];
 
@@ -55,7 +54,7 @@ const ProjectShowcase = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
-            <div className="bg-white p-4 flex items-center justify-center h-48">
+            <div className="bg-white p-6 flex items-center justify-center h-52">
               {project.logo ? (
                 <img 
                   src={project.logo} 
@@ -72,7 +71,7 @@ const ProjectShowcase = () => {
                 />
               )}
             </div>
-            <CardHeader className="pb-2">
+            <CardHeader className="pb-2 pt-4">
               <CardTitle className="text-xl text-blue-700">{project.title}</CardTitle>
             </CardHeader>
             <CardContent className="pb-2 flex-grow">

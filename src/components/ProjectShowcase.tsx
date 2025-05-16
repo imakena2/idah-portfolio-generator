@@ -2,7 +2,7 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Database, Shield, PieChart, GraduationCap, Hospital, Virus } from "lucide-react";
+import { Database, Shield, PieChart, GraduationCap, Medkit } from "lucide-react";
 
 const projects = [
   {
@@ -31,7 +31,7 @@ const projects = [
     description: "SQL-based clinic system managing patients, doctors, and appointments using foreign keys and advanced database relationships.",
     tags: ["MySQL", "Database Design", "Healthcare IT"],
     link: "#",
-    icon: <Hospital className="h-16 w-16 text-green-600" />
+    icon: <Medkit className="h-16 w-16 text-green-600" />
   },
   {
     title: "EduConnect - STEM Parent Teacher App",
@@ -45,7 +45,7 @@ const projects = [
     description: "A Python-based data analysis project tracking COVID-19 trends in Kenya, USA, India, and China with visualizations and statistical analysis.",
     tags: ["Python", "Data Analysis", "Visualization", "Statistics"],
     link: "#",
-    icon: <Virus className="h-16 w-16 text-red-600" />
+    icon: <Database className="h-16 w-16 text-red-600" />
   }
 ];
 

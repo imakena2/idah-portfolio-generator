@@ -2,7 +2,7 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Database, Shield, PieChart, GraduationCap, Medkit } from "lucide-react";
+import { Database, Shield, PieChart, GraduationCap, Stethoscope } from "lucide-react";
 
 const projects = [
   {
@@ -31,7 +31,7 @@ const projects = [
     description: "SQL-based clinic system managing patients, doctors, and appointments using foreign keys and advanced database relationships.",
     tags: ["MySQL", "Database Design", "Healthcare IT"],
     link: "#",
-    icon: <Medkit className="h-16 w-16 text-green-600" />
+    icon: <Stethoscope className="h-16 w-16 text-green-600" />
   },
   {
     title: "EduConnect - STEM Parent Teacher App",

@@ -1,7 +1,7 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Briefcase
+  Briefcase,
+  Award
 } from "lucide-react";
 
 const experiences = [
@@ -10,7 +10,14 @@ const experiences = [
     company: "Various Institutions",
     period: "Aug 2023 – April 2025",
     description: "Took a strategic career break to strengthen end-to-end IT competencies, with a focus on becoming a well-rounded professional capable of delivering sustained value and supporting long-term organizational goals.",
-    highlights: [],
+    highlights: [
+      "Obtained AWS Certified Cloud Practitioner certification",
+      "Developed programming skills in Python for automation and data analysis",
+      "Mastered web development fundamentals with HTML, CSS, JavaScript, and Django",
+      "Gained expertise in cybersecurity principles and practices",
+      "Studied DevSecOps methodologies for secure software development",
+      "Enhanced data analysis capabilities through dedicated training and practice"
+    ],
   },
   {
     title: "Technology Banking Operations Manager",
@@ -102,7 +109,7 @@ const ExperienceTimeline = () => {
             <CardContent className="p-6">
               <div className="flex items-start gap-4">
                 <div className="p-2 bg-blue-100 rounded-full text-blue-600">
-                  <Briefcase size={20} />
+                  {index === 0 ? <Award size={20} /> : <Briefcase size={20} />}
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-slate-800">{experience.title}</h3>

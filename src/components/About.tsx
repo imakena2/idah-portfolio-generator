@@ -11,23 +11,25 @@ const About = () => {
             <h2 className="text-3xl font-bold text-slate-800 mb-6">About Me</h2>
             <div className="space-y-4 text-slate-600">
               <p>
-                Experienced IT and Service Management Professional with 7+ years in IT operations, cloud computing, 
-                and system administration, combined with another 7 years as a Relationship Manager in the banking industry.
+                Experienced IT and Service Management Professional combining 7+ years in IT operations with 7+ years
+                in customer relationship management roles. My technical foundation has been significantly enhanced
+                during my recent career break, where I focused on strengthening end-to-end IT competencies.
               </p>
               <p>
-                This unique blend of technical expertise and customer-facing experience has shaped a strong ability 
-                to understand client needs, manage expectations, and deliver tailored solutions. Adept at enhancing 
-                service delivery, streamlining support processes, and implementing secure, scalable systems.
+                I've expanded my skill set with AWS Cloud certification as a Certified Cloud Practitioner, developed 
+                programming skills in Python, and gained web development experience with HTML, CSS, JavaScript, and Django. 
+                Additionally, I've built expertise in data analysis, DevSecOps practices, and cybersecurity principles.
               </p>
               <p>
                 Throughout my career at Kenya Commercial Bank Group, I've held various roles of increasing responsibility, 
                 from Service Desk Analyst to Technology Banking Operations Manager. I've demonstrated a proven ability to monitor 
-                critical infrastructure, coordinate preventive maintenance, and generate detailed operational reports.
+                critical infrastructure, coordinate preventive maintenance, and generate detailed operational reports,
+                consistently achieving 99.7% uptime for critical financial systems.
               </p>
               <p>
-                I'm also committed to leveraging technology to solve real-world problems and enhance operational efficiency
-                across industries. My background in both technical operations and customer relationship management enables
-                me to bridge the gap between technical solutions and business objectives.
+                My unique ability to bridge technical solutions with business objectives allows me to deliver secure, 
+                scalable systems while maintaining exceptional service levels. I excel at implementing security protocols, 
+                automating processes, and enhancing customer experiences across diverse enterprise environments.
               </p>
             </div>
             <div className="mt-8">

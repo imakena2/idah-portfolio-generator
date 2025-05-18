@@ -20,6 +20,8 @@ const Hero = () => {
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Customer Success Manager</span>
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Cybersecurity</span>
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Cloud (AWS)</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">DevSecOps</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Data Analysis</span>
               </div>
               <p className="text-md md:text-lg text-blue-700 font-medium mt-3">
                 99.7% Uptime Expert | Driving Secure, Inclusive Digital Solutions | Empowering Global Teams & Digital Equity
@@ -27,7 +29,7 @@ const Hero = () => {
             </div>
             <div className="mt-6 bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg shadow-sm">
               <p className="text-slate-700 leading-relaxed">
-                Experienced IT and Service Management Professional with over 7 years of hands-on expertise in IT operations, cloud computing, and system administration, complemented by an additional 7 years as a Relationship Manager in the banking sector. This powerful combination of technical acumen and customer-facing experience enables the delivery of tailored, scalable, and secure solutions that align with client needs. Known for enhancing service delivery, streamlining support processes, and fostering user satisfaction through a blend of innovation and empathy. Adept at translating complex systems into meaningful customer experiences and driving operational excellence across diverse environments.
+                Versatile IT professional with a unique blend of 14+ years of experience spanning technical operations and customer relationship management in the banking sector. My background combines 7+ years in IT operations with 7 years in customer-facing roles, enhanced by recent upskilling in AWS Cloud (Certified Practitioner), Python programming, web development (HTML, CSS, JavaScript, Django), data analysis, DevSecOps, and cybersecurity. This multifaceted expertise allows me to bridge technical solutions with business objectives, delivering scalable, secure systems while maintaining exceptional service levels. Known for achieving 99.7% uptime for critical systems, automating processes to reduce operational times by 13%, and implementing security protocols that protect sensitive financial data. I bring a holistic approach to IT service management that drives operational excellence, fosters innovation, and enhances the overall customer experience across diverse enterprise environments.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-4">

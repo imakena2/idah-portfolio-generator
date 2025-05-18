@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -54,7 +55,7 @@ const ProjectShowcase = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
-            <div className="bg-white p-6 flex items-center justify-center h-52">
+            <div className="bg-white p-4 flex items-center justify-center h-44">
               {project.logo ? (
                 <img 
                   src={project.logo} 
@@ -71,7 +72,7 @@ const ProjectShowcase = () => {
                 />
               )}
             </div>
-            <CardHeader className="pb-2 pt-4">
+            <CardHeader className="pb-1 pt-2">
               <CardTitle className="text-xl text-blue-700">{project.title}</CardTitle>
             </CardHeader>
             <CardContent className="pb-2 flex-grow">

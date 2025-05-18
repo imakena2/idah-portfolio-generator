@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Briefcase
@@ -6,10 +5,10 @@ import {
 
 const experiences = [
   {
-    title: "Educational Break",
+    title: "Career Break",
     company: "Various Institutions",
-    period: "Dec 2023 – Ongoing",
-    description: "Took a professional break to complete certifications, gaining expertise in data analysis, AI & machine learning, cloud solutions, and secure software development for career advancement.",
+    period: "Aug 2023 – April 2025",
+    description: "Took a strategic career break to strengthen end-to-end IT competencies, with a focus on becoming a well-rounded professional capable of delivering sustained value and supporting long-term organizational goals.",
     highlights: [],
   },
   {

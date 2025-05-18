@@ -14,11 +14,15 @@ const Hero = () => {
               Idah Makena Ncooro
             </h1>
             <div className="mt-4">
-              <p className="text-xl md:text-2xl text-slate-600">
-                |Technical Customer Support| IT Service Desk | Customer Success Manager| IT Service Desk | Cybersecurity | Cloud (AWS) | 99.7% Uptime Expert | Driving Secure, Inclusive Digital Solutions | Empowering Global Teams & Digital Equity
-              </p>
-              <p className="text-md md:text-lg text-blue-600 font-medium mt-1">
-                Delivering Reliable IT Support and Proactive Monitoring for Business Success
+              <div className="flex flex-wrap gap-2 mb-3">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Technical Customer Support</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">IT Service Desk</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Customer Success Manager</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Cybersecurity</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Cloud (AWS)</span>
+              </div>
+              <p className="text-md md:text-lg text-blue-700 font-medium mt-3">
+                99.7% Uptime Expert | Driving Secure, Inclusive Digital Solutions | Empowering Global Teams & Digital Equity
               </p>
             </div>
             <div className="mt-6 bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg shadow-sm">

@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Briefcase
@@ -17,26 +18,27 @@ const experiences = [
     period: "Jan 2023 – Aug 2023",
     description: "",
     highlights: [
+      "Managed Core Banking Systems Close of Business (COB) for multiple countries.",
+      "Monitored system performance, swift files movement, and automated jobs.",
+      "Handled user requests for data extraction and ad-hoc reports from the Core Banking System.",
+      "Ensured seamless transition between shift teams for uninterrupted operations.",
       "Spearheaded ETL optimization projects, achieving a 99.7% uptime for critical financial systems.",
       "Automated COB processing, reducing processing time by 13%, significantly improving operational efficiency.",
-      "Standardized IT operations across four countries, resulting in streamlined processes and improved cross-border collaboration.",
-      "Led a team to integrate cloud-based tools, driving a 17% increase in system reliability.",
-      "Developed cloud-driven workflows that enhanced reporting accuracy, meeting regulatory requirements with zero delays.",
-      "Partnered with virtual teams to deploy a new financial application system, delivering the project two weeks ahead of schedule.",
-      "Improved troubleshooting protocols, enabling the resolution of high-priority incidents within an average of 4 hours."
+      "Standardized IT operations across four countries, resulting in streamlined processes and improved cross-border collaboration."
     ],
   },
   {
-    title: "Desktop Applications Specialist",
+    title: "IT Support Engineer",
     company: "Kenya Commercial Bank Group",
     period: "Aug 2018 – Dec 2022",
     description: "",
     highlights: [
-      "Consistently delivered first-contact resolution for 94% of support tickets by efficiently diagnosing and addressing technical issues, ensuring seamless business operations with minimal downtime.",
-      "Designed and implemented virtual training programs that reached over 200 users, leading to a 27% decrease in help desk inquiries and significantly improving user proficiency.",
-      "Strengthened identity and access management (IAM) protocols by enforcing stringent security measures, which led to a 12% reduction in vulnerabilities identified during regular audits.",
-      "Worked closely with cloud service providers to optimize application configurations, resulting in an 18% improvement in load times for critical business applications.",
-      "Automated critical troubleshooting scripts, which reduced the average incident response time by approximately 6 minutes, enhancing service efficiency."
+      "Provided technical expertise in Active Directory, MS Exchange, messaging, and mobile collaboration.",
+      "Ensured reliable delivery of e-banking communications (Internet Banking, Mobile Banking).",
+      "Managed patch deployment, threat management, and email security platforms.",
+      "Consistently delivered first-contact resolution for 94% of support tickets by efficiently diagnosing and addressing technical issues.",
+      "Designed and implemented virtual training programs that reached over 200 users, leading to a 27% decrease in help desk inquiries.",
+      "Strengthened identity and access management (IAM) protocols by enforcing stringent security measures."
     ],
   },
   {
@@ -45,9 +47,11 @@ const experiences = [
     period: "Jan 2017 – Jul 2018",
     description: "",
     highlights: [
-      "Spearheaded the introduction of root cause analysis frameworks, which reduced recurring incidents by 23% within just six months, improving service reliability.",
-      "Implemented advanced cloud-based monitoring tools, increasing the rate of early incident detection by 39% and preventing critical service disruptions.",
-      "Successfully managed and mentored a geographically distributed team of six IT specialists, ensuring consistent adherence to service level agreements (SLAs) across all supported locations."
+      "Provided second-level user support for banking applications, hardware, and security systems.",
+      "Implemented access controls for user account management, ensuring compliance.",
+      "Conducted identity and privileged access audits and remediation exercises across the bank.",
+      "Spearheaded the introduction of root cause analysis frameworks, which reduced recurring incidents by 23% within six months.",
+      "Implemented advanced cloud-based monitoring tools, increasing the rate of early incident detection by 39%."
     ],
   },
   {
@@ -56,21 +60,35 @@ const experiences = [
     period: "Sept 2015 – Dec 2016",
     description: "",
     highlights: [
-      "Maintained an impressive 98% SLA compliance rate by standardizing and refining incident response protocols across multiple departments, ensuring timely service delivery.",
-      "Provided effective remote IT support for over 50 bank branches, ensuring uninterrupted business operations across the organization's wide network.",
-      "Collaborated with team members to streamline processes, achieving a 19% reduction in ticket resolution times, which significantly enhanced overall user experience."
+      "First-line IT support for bank branches, subsidiaries, and head office.",
+      "Diagnosed and resolved technical incidents, escalating complex cases.",
+      "Provided daily IT service desk monitoring reports on system performance.",
+      "Maintained an impressive 98% SLA compliance rate by standardizing and refining incident response protocols.",
+      "Provided effective remote IT support for over 50 bank branches, ensuring uninterrupted business operations."
     ],
   },
   {
     title: "Customer Relationship Manager",
     company: "Kenya Commercial Bank Group",
-    period: "Sept 2015 – Dec 2016",
+    period: "Mar 2011 – Aug 2015",
     description: "",
     highlights: [
+      "Led lending and customer service units, ensuring loan approvals and repayments.",
+      "Supervised front-office staff to provide world-class customer service.",
+      "Managed credit portfolio and risk compliance to align with banking regulations.",
       "Spearheaded the adoption of cloud-based solutions, driving a 20% growth in the customer portfolio.",
-      "Designed and implemented digital transformation strategies, elevating client retention and satisfaction through innovative cloud services.",
-      "Enhanced customer engagement by leveraging data-driven insights to tailor banking solutions to client needs.",
-      "Collaborated with cross-functional teams to streamline customer onboarding processes, reducing turnaround time by 30%."
+      "Enhanced customer engagement by leveraging data-driven insights to tailor banking solutions to client needs."
+    ],
+  },
+  {
+    title: "Banking Credit & Operations Analyst",
+    company: "Kenya Commercial Bank Group",
+    period: "Jan 2008 – Feb 2011",
+    description: "",
+    highlights: [
+      "Processed and monitored loans, ensuring repayment compliance.",
+      "Managed portfolio grading and security documentation in line with prudential banking standards.",
+      "Supervised financial transactions, including fixed deposit maturity monitoring."
     ],
   }
 ];
@@ -111,6 +129,12 @@ const ExperienceTimeline = () => {
             </CardContent>
           </Card>
         ))}
+      </div>
+      <div className="mt-12 p-6 bg-blue-50 rounded-lg border border-blue-200">
+        <h3 className="text-xl font-semibold text-center text-blue-800 mb-3">Final Recognition</h3>
+        <p className="text-center text-slate-700 italic">
+          "Idah is a valuable team leader with high technical aptitude. She is multi-skilled, business savvy, and a problem solver."
+        </p>
       </div>
     </section>
   );

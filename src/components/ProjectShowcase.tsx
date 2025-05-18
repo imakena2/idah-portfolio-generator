@@ -142,7 +142,7 @@ const ProjectShowcase = () => {
           
           <h3 className="text-xl font-semibold text-blue-700 mb-2">Tech Ace Solutions</h3>
           <p className="text-slate-600 italic mb-6 max-w-2xl">
-            "Working with Irene has been a transformative experience for our IT operations. 
+            "Working with Idah has been a transformative experience for our IT operations. 
             Her deep technical knowledge combined with exceptional communication skills helped 
             streamline our infrastructure and improve our service delivery processes."
           </p>

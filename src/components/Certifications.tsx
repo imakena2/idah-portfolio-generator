@@ -3,12 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const certifications = [
   {
-    name: "Certificate in Data Science",
-    issuer: "Techsavanna Software Institute",
-    year: "2024",
-    type: "certification"
-  },
-  {
     name: "Development, Security and Operations (DevSecOps)",
     issuer: "Innovate Systems",
     year: "2024",
@@ -31,13 +25,6 @@ const certifications = [
     issuer: "Women Techsters",
     year: "2024",
     type: "certification"
-  },
-  {
-    name: "CyberOpsAssoc",
-    issuer: "Cisco Network Academy",
-    year: "2025",
-    type: "training",
-    status: "Ongoing"
   },
   {
     name: "Development, Security and Operations (DevSecOps)",

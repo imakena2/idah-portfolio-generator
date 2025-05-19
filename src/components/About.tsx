@@ -4,26 +4,27 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   const scrollToContact = () => {
-    // Find the contact section on the current page
+    // Check if we're already on a page with the contact section
     const contactSection = document.getElementById('contact');
     
     if (contactSection) {
+      // If on the same page, smooth scroll to contact section
       contactSection.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // If not on the page with contact section, navigate to home page and then scroll
-      window.location.href = '/#contact';
+      // If not on the page with contact section, navigate to projects page which has the contact form
+      window.location.href = '/projects#contact';
     }
   };
 
   return (
-    <section className="py-16 bg-white" id="about">
+    <section className="py-16 bg-gradient-to-b from-white to-purple-50" id="about">
       <div className="container mx-auto px-4">
         <div className="flex flex-col">
           <div className="w-full">
             <h2 className="text-3xl font-bold text-slate-800 mb-6">About Me</h2>
             <div className="space-y-4 text-slate-600">
-              <p>
-                Experienced IT and Service Management Professional combining 7+ years in IT operations with 7+ years
+              <p className="text-lg">
+                <strong className="text-purple-700">Well-rounded IT professional with a keen interest in Cloud Security</strong>, combining 7+ years in IT operations with 7+ years
                 in customer relationship management roles. My technical foundation has been significantly enhanced
                 during my recent career break, where I focused on strengthening end-to-end IT competencies.
               </p>
@@ -46,15 +47,16 @@ const About = () => {
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link to="/experience">
-                <Button className="bg-blue-600 hover:bg-blue-700">View My Experience</Button>
+                <Button className="bg-purple-600 hover:bg-purple-700">View My Experience</Button>
               </Link>
-              <Button 
-                onClick={scrollToContact}
-                variant="outline" 
-                className="border-blue-600 text-blue-600 hover:bg-blue-50"
-              >
-                Contact Me
-              </Button>
+              <Link to="/projects#contact">
+                <Button 
+                  variant="outline" 
+                  className="border-purple-600 text-purple-600 hover:bg-purple-50"
+                >
+                  Contact Me
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

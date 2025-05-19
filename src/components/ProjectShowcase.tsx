@@ -2,7 +2,7 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Database, Shield, PieChart, GraduationCap, Stethoscope, Cloud } from "lucide-react";
+import { PieChart, GraduationCap, Stethoscope } from "lucide-react";
 
 const projects = [
   {
@@ -17,14 +17,14 @@ const projects = [
     description: "A cloud infrastructure project demonstrating how to host a static website using Amazon S3, implementing cost-effective and scalable hosting solutions with proper security configurations.",
     tags: ["AWS", "S3", "Cloud Computing", "DevOps", "IaC"],
     link: "https://github.com/imakena2/Hosting-Static-Website-using-AWS-S3.git",
-    icon: <Cloud className="h-16 w-16 text-orange-500" />
+    logo: "/lovable-uploads/704c97b6-2b36-4210-b9d4-da25146deef8.png" 
   },
   {
     title: "CyberRisk Assessment Toolkit for SMEs",
     description: "A comprehensive cybersecurity toolkit designed specifically for small to medium-sized enterprises, providing affordable risk assessment frameworks and implementation guidance.",
     tags: ["Cybersecurity", "Risk Assessment", "SME", "Security Framework"],
     link: "https://github.com/imakena2/ASSESSMENT-TOOLKIT-FOR-SMES.git",
-    icon: <Shield className="h-16 w-16 text-blue-700" />
+    logo: "/placeholder.svg"
   },
   {
     title: "Mwethe Clinic Booking System",
@@ -45,7 +45,7 @@ const projects = [
     description: "A Python-based data analysis project tracking COVID-19 trends in Kenya, USA, India, and China with visualizations and statistical analysis.",
     tags: ["Python", "Data Analysis", "Visualization", "Statistics"],
     link: "#",
-    icon: <Database className="h-16 w-16 text-red-600" />
+    logo: "/placeholder.svg"
   }
 ];
 
@@ -97,7 +97,7 @@ const ProjectShowcase = () => {
         ))}
       </div>
       
-      <div className="mt-16 mb-16">
+      <div className="mt-16 mb-16 bg-slate-100 rounded-lg p-8">
         <h2 className="text-2xl font-bold text-slate-800 mb-6">Professional Tools</h2>
         <div className="bg-white p-6 rounded-lg shadow-sm">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

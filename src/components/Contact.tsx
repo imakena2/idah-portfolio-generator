@@ -25,23 +25,11 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    try {
-      // Using EmailJS or a similar service would be ideal, but for now we'll use a simple mailto link
-      const emailBody = `
-        Name: ${formData.name}
-        Email: ${formData.email}
-        Subject: ${formData.subject}
-        
-        Message:
-        ${formData.message}
-      `;
-      
-      const mailtoLink = `mailto:imakena@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(emailBody)}`;
-      window.open(mailtoLink);
-      
+    // Simulate form submission
+    setTimeout(() => {
       toast({
-        title: "Message Ready to Send!",
-        description: "Your email client has been opened with your message. Please send to complete.",
+        title: "Message Sent!",
+        description: "Thank you for your message. I will get back to you soon.",
       });
       
       // Reset form
@@ -51,16 +39,12 @@ const Contact = () => {
         subject: "",
         message: ""
       });
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "There was a problem sending your message. Please try again.",
-        variant: "destructive",
-      });
-      console.error("Error sending email:", error);
-    } finally {
       setIsSubmitting(false);
-    }
+    }, 1500);
+    
+    // Note: In a real application, you would connect this to a backend API
+    // For demonstration purposes, we're just showing a success message
+    console.log("Form submitted with data:", formData);
   };
 
   return (

@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-16 bg-white" id="about">
       <div className="container mx-auto px-4">
@@ -32,10 +39,17 @@ const About = () => {
                 automating processes, and enhancing customer experiences across diverse enterprise environments.
               </p>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap gap-4">
               <Link to="/experience">
                 <Button className="bg-blue-600 hover:bg-blue-700">View My Experience</Button>
               </Link>
+              <Button 
+                onClick={scrollToContact}
+                variant="outline" 
+                className="border-blue-600 text-blue-600 hover:bg-blue-50"
+              >
+                Contact Me
+              </Button>
             </div>
           </div>
         </div>

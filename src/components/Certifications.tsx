@@ -17,7 +17,9 @@ const certifications = [
   {
     name: "Certificate in Web Development",
     issuer: "E-mobilis Technology Institute",
-    year: "2024",
+    date: "September 2024 - December 2024",
+    awardDate: "February 6, 2025",
+    year: "2025",
     type: "certification"
   },
   {
@@ -25,6 +27,14 @@ const certifications = [
     issuer: "Women Techsters",
     year: "2024",
     type: "certification"
+  },
+  {
+    name: "Software Engineering with specialization in Software Testing",
+    issuer: "PLP Academy",
+    date: "February 2025 - August 2025",
+    year: "2025",
+    type: "training",
+    status: "Ongoing"
   },
   {
     name: "Development, Security and Operations (DevSecOps)",
@@ -42,9 +52,9 @@ const certifications = [
   },
   {
     name: "Cybersecurity and Emerging Technologies Awareness Training",
-    issuer: "",
+    issuer: "ICT Authority, Kenya in collaboration with Capabuil",
     year: "2025",
-    type: "training"
+    type: "certification"
   },
   {
     name: "AWS Solutions Architect",
@@ -86,7 +96,7 @@ const Certifications = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {certifications.map((cert, index) => (
-          <Card key={index} className={cert.type === "certification" ? "border-l-4 border-green-500" : "border-l-4 border-blue-400"}>
+          <Card key={index} className={cert.status === "Ongoing" ? "border-l-4 border-amber-500" : cert.type === "certification" ? "border-l-4 border-green-500" : "border-l-4 border-blue-400"}>
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div>
@@ -95,6 +105,8 @@ const Certifications = () => {
                     {cert.status && <span className="ml-2 text-xs px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full">{cert.status}</span>}
                   </h3>
                   {cert.issuer && <p className="text-sm text-slate-500">{cert.issuer}</p>}
+                  {cert.date && <p className="text-sm text-slate-500">{cert.date}</p>}
+                  {cert.awardDate && <p className="text-xs text-slate-400">Awarded: {cert.awardDate}</p>}
                 </div>
                 <span className="text-xs font-medium px-2 py-1 rounded-full bg-slate-100 text-slate-600">{cert.year}</span>
               </div>

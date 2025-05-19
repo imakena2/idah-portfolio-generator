@@ -31,15 +31,15 @@ const skillCategories = [
 const Skills = () => {
   return (
     <section className="py-12">
-      <h2 className="text-2xl font-bold text-slate-800 mb-8">Skills & Expertise</h2>
+      <h2 className="text-2xl font-bold text-blue-700 mb-8">Skills & Expertise</h2>
       
       <div className="space-y-8">
         {skillCategories.map((category, index) => (
-          <div key={index}>
-            <h3 className="text-lg font-semibold text-blue-600 mb-3">{category.name}</h3>
+          <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-lg font-semibold text-blue-600 mb-3 border-b border-blue-100 pb-2">{category.name}</h3>
             <div className="flex flex-wrap gap-2">
               {category.skills.map((skill, skillIndex) => (
-                <Badge key={skillIndex} variant="secondary" className="bg-blue-50 text-blue-700 hover:bg-blue-100">
+                <Badge key={skillIndex} variant="secondary" className="bg-blue-50 text-blue-700 hover:bg-blue-100 py-1.5">
                   {skill}
                 </Badge>
               ))}

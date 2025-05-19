@@ -15,6 +15,7 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
     { name: "About", path: "/", section: "about" },
     { name: "Experience", path: "/experience", section: "experience" },
     { name: "Projects", path: "/projects", section: "projects" },
+    { name: "Skills", path: "/skills", section: "skills" },
   ];
 
   return (

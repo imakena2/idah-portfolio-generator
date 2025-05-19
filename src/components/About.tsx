@@ -4,16 +4,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   const scrollToContact = () => {
-    // Check if we're already on a page with the contact section
-    const contactSection = document.getElementById('contact');
-    
-    if (contactSection) {
-      // If on the same page, smooth scroll to contact section
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      // If not on the page with contact section, navigate to projects page which has the contact form
-      window.location.href = '/projects#contact';
-    }
+    window.location.href = '/projects#contact';
   };
 
   return (

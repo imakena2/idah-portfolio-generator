@@ -16,6 +16,7 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
     { name: "Experience", path: "/experience", section: "experience" },
     { name: "Projects", path: "/projects", section: "projects" },
     { name: "Skills", path: "/skills", section: "skills" },
+    { name: "Certifications", path: "/certifications", section: "certifications" },
   ];
 
   return (
@@ -28,7 +29,7 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.name}

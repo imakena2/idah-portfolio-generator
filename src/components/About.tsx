@@ -4,9 +4,14 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   const scrollToContact = () => {
+    // Find the contact section on the current page
     const contactSection = document.getElementById('contact');
+    
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If not on the page with contact section, navigate to home page and then scroll
+      window.location.href = '/#contact';
     }
   };
 

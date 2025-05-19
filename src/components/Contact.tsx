@@ -25,7 +25,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // Simulate form submission instead of redirecting to mailto
     setTimeout(() => {
       toast({
         title: "Message Sent!",
@@ -42,8 +42,7 @@ const Contact = () => {
       setIsSubmitting(false);
     }, 1500);
     
-    // Note: In a real application, you would connect this to a backend API
-    // For demonstration purposes, we're just showing a success message
+    // Log the form data (in a real app, this would be sent to a backend API)
     console.log("Form submitted with data:", formData);
   };
 
@@ -61,9 +60,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-medium text-slate-700">Email</h4>
-                <a href="mailto:imakena@gmail.com" className="text-blue-600 hover:underline">
-                  imakena@gmail.com
-                </a>
+                <p className="text-blue-600">imakena@gmail.com</p>
               </div>
             </div>
             
@@ -73,9 +70,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-medium text-slate-700">Phone</h4>
-                <a href="tel:+254722124963" className="text-blue-600 hover:underline">
-                  +254 722 124 963
-                </a>
+                <p className="text-blue-600">+254 722 124 963</p>
               </div>
             </div>
             

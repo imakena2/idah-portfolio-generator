@@ -1,15 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="py-6 bg-gradient-to-b from-white to-purple-50" id="about">
+    <section className="py-12 bg-gradient-to-b from-white to-purple-50" id="about">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col">
+        <div className="flex flex-col max-w-6xl mx-auto">
           <div className="w-full">
-            <h2 className="text-3xl font-bold text-slate-800 mb-6">My Professional Journey</h2>
-            <div className="space-y-4 text-slate-600">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-8 text-center">My Professional Journey</h2>
+            <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
               <p className="text-lg">
                 My career began at the forefront of digital transformation, spearheading the computerization of banking operations from traditional paper-based workflows to sophisticated digital platforms. This foundational experience in change management and process digitization established my expertise in driving organizational transformation while maintaining operational excellence.
               </p>
@@ -31,8 +30,8 @@ const About = () => {
             </div>
 
             {/* Value Proposition Section */}
-            <div className="mt-8 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold mb-6 text-center">Corporate Value Proposition</h3>
+            <div className="mt-12 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-8 rounded-xl shadow-lg">
+              <h3 className="text-3xl font-bold mb-8 text-center">Corporate Value Proposition</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="text-lg font-semibold mb-3 text-purple-100">🚀 Digital Transformation Catalyst</h4>
@@ -62,8 +61,8 @@ const About = () => {
             </div>
 
             {/* What I Bring Section */}
-            <div className="mt-8 bg-white border-2 border-purple-200 rounded-xl p-6 shadow-md">
-              <h3 className="text-xl font-bold text-purple-800 mb-4">What I Bring to Your Organization</h3>
+            <div className="mt-12 bg-white border-2 border-purple-200 rounded-xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-purple-800 mb-6 text-center">What I Bring to Your Organization</h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="text-center p-4 bg-purple-50 rounded-lg">
                   <div className="text-2xl font-bold text-purple-600 mb-2">99.7%</div>
@@ -80,20 +79,20 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-purple-50 border-l-4 border-purple-600 p-6 rounded-r-lg mt-6">
-              <p className="text-purple-800 font-medium text-lg">
+            <div className="bg-purple-50 border-l-4 border-purple-600 p-8 rounded-r-lg mt-8">
+              <p className="text-purple-800 font-medium text-xl leading-relaxed">
                 <strong>The Bottom Line:</strong> I'm not just a technical expert—I'm a business-minded technology strategist who understands that every IT solution must drive measurable business value. My unique combination of operational excellence, customer relationship expertise, and cutting-edge technical skills positions me to be an immediate contributor who can lead digital initiatives, optimize processes, and deliver results that matter to your bottom line.
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-wrap justify-center gap-6">
               <Link to="/experience">
-                <Button className="bg-purple-600 hover:bg-purple-700">Explore My Experience</Button>
+                <Button className="bg-purple-600 hover:bg-purple-700 text-lg px-8 py-3">Explore My Experience</Button>
               </Link>
               <Link to="/projects#contact">
                 <Button 
                   variant="outline" 
-                  className="border-purple-600 text-purple-600 hover:bg-purple-50"
+                  className="border-purple-600 text-purple-600 hover:bg-purple-50 text-lg px-8 py-3"
                 >
                   Let's Connect
                 </Button>

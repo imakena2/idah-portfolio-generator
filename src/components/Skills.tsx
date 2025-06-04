@@ -62,17 +62,17 @@ const professionalTools = [
 
 const Skills = () => {
   return (
-    <div>
-      <section className="py-12">
-        <h2 className="text-3xl font-bold text-purple-800 mb-8 text-center">Skills & Expertise</h2>
+    <div className="space-y-12">
+      <section className="py-8">
+        <h2 className="text-4xl font-bold text-purple-800 mb-10 text-center">Technical Skills & Expertise</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-600 hover:shadow-lg transition-shadow">
-              <h3 className="text-lg font-semibold text-purple-700 mb-4 pb-2 border-b border-purple-100">{category.name}</h3>
-              <div className="flex flex-wrap gap-2">
+            <div key={index} className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-purple-600 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-bold text-purple-700 mb-6 pb-3 border-b border-purple-100">{category.name}</h3>
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill, skillIndex) => (
-                  <Badge key={skillIndex} variant="secondary" className="bg-purple-50 text-purple-700 hover:bg-purple-100 py-1.5 px-3">
+                  <Badge key={skillIndex} variant="secondary" className="bg-purple-50 text-purple-700 hover:bg-purple-100 py-2 px-4 text-sm font-medium">
                     {skill}
                   </Badge>
                 ))}
@@ -82,17 +82,17 @@ const Skills = () => {
         </div>
       </section>
       
-      <section className="py-12 bg-gradient-to-r from-purple-50 to-white rounded-xl my-8 p-6">
-        <h2 className="text-2xl font-bold text-purple-800 mb-6 text-center">Professional Tools</h2>
+      <section className="py-12 bg-gradient-to-r from-purple-50 to-white rounded-2xl p-8">
+        <h2 className="text-3xl font-bold text-purple-800 mb-8 text-center">Professional Tools & Platforms</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {professionalTools.map((toolCategory, index) => (
-            <Card key={index} className="border-t-4 border-purple-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <h3 className="font-semibold text-purple-700 mb-3">{toolCategory.category}</h3>
-                <div className="flex flex-wrap gap-2">
+            <Card key={index} className="border-t-4 border-purple-500 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8">
+                <h3 className="text-lg font-bold text-purple-700 mb-4">{toolCategory.category}</h3>
+                <div className="flex flex-wrap gap-3">
                   {toolCategory.tools.map((tool, toolIndex) => (
-                    <Badge key={toolIndex} className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                    <Badge key={toolIndex} className="bg-purple-100 text-purple-800 hover:bg-purple-200 py-1.5 px-3">
                       {tool}
                     </Badge>
                   ))}

@@ -91,25 +91,25 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <div>
-      <section className="py-12">
-        <h2 className="text-2xl font-bold text-purple-800 mb-8 text-center">Certifications & Training</h2>
+    <div className="space-y-12">
+      <section className="py-8">
+        <h2 className="text-3xl font-bold text-purple-800 mb-10 text-center">Professional Certifications & Training</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {certifications.map((cert, index) => (
-            <Card key={index} className={`hover:shadow-lg transition-duration-300 ${cert.status === "Ongoing" ? "border-l-4 border-amber-500" : cert.type === "certification" ? "border-l-4 border-purple-600" : "border-l-4 border-blue-500"}`}>
-              <CardContent className="p-4">
+            <Card key={index} className={`hover:shadow-xl transition-all duration-300 ${cert.status === "Ongoing" ? "border-l-4 border-amber-500 bg-amber-50" : cert.type === "certification" ? "border-l-4 border-purple-600 bg-white" : "border-l-4 border-blue-500 bg-blue-50"}`}>
+              <CardContent className="p-6">
                 <div className="flex items-center justify-between">
-                  <div>
-                    <h3 className="font-medium text-slate-800">
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-slate-800 mb-2">
                       {cert.name}
-                      {cert.status && <span className="ml-2 text-xs px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full">{cert.status}</span>}
+                      {cert.status && <span className="ml-3 text-xs px-3 py-1 bg-amber-100 text-amber-700 rounded-full font-medium">{cert.status}</span>}
                     </h3>
-                    {cert.issuer && <p className="text-sm text-slate-500">{cert.issuer}</p>}
+                    {cert.issuer && <p className="text-base text-slate-600 mb-1">{cert.issuer}</p>}
                     {cert.date && <p className="text-sm text-slate-500">{cert.date}</p>}
-                    {cert.awardDate && <p className="text-xs text-slate-400">Awarded: {cert.awardDate}</p>}
+                    {cert.awardDate && <p className="text-xs text-slate-400 mt-1">Awarded: {cert.awardDate}</p>}
                   </div>
-                  <span className="text-xs font-medium px-2 py-1 rounded-full bg-purple-100 text-purple-700">{cert.year}</span>
+                  <span className="text-sm font-bold px-3 py-2 rounded-full bg-purple-100 text-purple-700 ml-4">{cert.year}</span>
                 </div>
               </CardContent>
             </Card>
@@ -117,19 +117,21 @@ const Certifications = () => {
         </div>
       </section>
       
-      <section className="py-12 bg-gradient-to-r from-purple-50 to-white rounded-xl my-8 p-6">
-        <h3 className="text-xl font-bold text-purple-800 mb-6 text-center">Education</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <Card className="border-t-4 border-purple-500 shadow-md hover:shadow-lg transition-shadow">
-            <CardContent className="p-6">
-              <h4 className="font-medium text-slate-800 text-lg">BSc. Information Technology</h4>
-              <p className="text-sm text-slate-500">Jomo Kenyatta University of Agriculture & Technology | 2004</p>
+      <section className="py-12 bg-gradient-to-r from-purple-50 to-white rounded-2xl p-8">
+        <h3 className="text-2xl font-bold text-purple-800 mb-8 text-center">Educational Background</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <Card className="border-t-4 border-purple-500 shadow-lg hover:shadow-xl transition-all duration-300">
+            <CardContent className="p-8 text-center">
+              <h4 className="text-xl font-bold text-slate-800 mb-3">BSc. Information Technology</h4>
+              <p className="text-base text-slate-600">Jomo Kenyatta University of Agriculture & Technology</p>
+              <p className="text-sm text-purple-600 font-semibold mt-2">2004</p>
             </CardContent>
           </Card>
-          <Card className="border-t-4 border-purple-500 shadow-md hover:shadow-lg transition-shadow">
-            <CardContent className="p-6">
-              <h4 className="font-medium text-slate-800 text-lg">Diploma in Information Technology</h4>
-              <p className="text-sm text-slate-500">Jomo Kenyatta University of Agriculture & Technology | Dec 2000</p>
+          <Card className="border-t-4 border-purple-500 shadow-lg hover:shadow-xl transition-all duration-300">
+            <CardContent className="p-8 text-center">
+              <h4 className="text-xl font-bold text-slate-800 mb-3">Diploma in Information Technology</h4>
+              <p className="text-base text-slate-600">Jomo Kenyatta University of Agriculture & Technology</p>
+              <p className="text-sm text-purple-600 font-semibold mt-2">Dec 2000</p>
             </CardContent>
           </Card>
         </div>

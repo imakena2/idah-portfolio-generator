@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -82,6 +82,23 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-slate-700">Phone</h4>
                   <p className="text-purple-600">+254 722 124 963</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-purple-100 rounded-full text-purple-600">
+                  <MessageCircle size={20} />
+                </div>
+                <div>
+                  <h4 className="font-medium text-slate-700">WhatsApp</h4>
+                  <a 
+                    href="https://wa.me/254722124963" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-purple-600 hover:underline"
+                  >
+                    +254 722 124 963
+                  </a>
                 </div>
               </div>
               

@@ -8,28 +8,28 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col max-w-6xl mx-auto">
           <div className="w-full">
-            {/* Professional Bio Section with Background */}
+            {/* Professional Journey Section with Background */}
             <div className="bg-gradient-to-r from-slate-50 to-purple-100 p-10 rounded-xl shadow-lg mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-12 text-center">Professional Bio</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-12 text-center">My Professional Story</h2>
               
               <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
                 <p>
-                  Versatile and solutions-driven IT professional with over 14 years of experience in technical operations, system support, and client-focused service delivery within demanding enterprise environments. I combine a strong foundation in IT infrastructure with a deep understanding of business processes to deliver secure, scalable, and customer-centric technology solutions.
+                  Some journeys begin with a single spark. Mine began behind a teller's counter—serving people, listening to stories, solving real problems. In that space, I discovered something deeper than routine transactions: the power of systems, the value of trust, and the role technology plays in both.
                 </p>
                 <p>
-                  My expertise spans managing enterprise systems across multiple regions, ensuring high operational uptime, securing digital environments, and converting data into actionable insights. Recently upskilled in cloud technologies (AWS Certified), Python programming, data analysis, cybersecurity, and DevSecOps, I am well-equipped to support modern digital ecosystems and drive continuous innovation with risk-aware growth.
+                  Over the years, I moved from counters to commands—from the front lines of banking to the intricate back end of digital infrastructure. I learned to speak the language of both people and machines, translating business pain points into reliable, secure, and scalable solutions. As I supported systems that served millions, I never lost sight of the individual behind each click, each ticket, each alert.
                 </p>
                 <p>
-                  <strong>Core strengths include:</strong>
+                  I've spent over 14 years navigating this intersection: seven years immersed in technical operations—supporting enterprise applications, securing platforms, managing systems across borders—and another seven years on the customer side, understanding user needs, building relationships, and turning problems into progress.
                 </p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Maintaining 99.7% uptime for critical platforms through proactive support and reliability practices</li>
-                  <li>Automating workflows to reduce operational time by 13%</li>
-                  <li>Enhancing digital trust via robust security controls and data protection</li>
-                  <li>Simplifying complex technical concepts into user-friendly support and strategic value</li>
-                </ul>
+                <p>
+                  Along the way, I've made a deliberate investment in growth. I earned cloud certifications. I studied Python, data, cybersecurity, and DevSecOps—not as trends, but as tools to build stronger, safer, and smarter digital environments. I've seen what happens when systems go down, and I've helped keep them running—with 99.7% uptime, streamlined processes, and automation that saves hours every day.
+                </p>
+                <p>
+                  I believe in quiet impact. In secure systems that just work. In dashboards that tell the truth. In teams that trust IT not just to fix, but to foresee.
+                </p>
                 <p className="font-semibold text-slate-800">
-                  I excel in environments that require technical excellence, business insight, and a strong commitment to service delivery—consistently aligning technology outcomes with organizational goals.
+                  This is the value I bring: a deep understanding of how technology empowers people, protects data, and propels organizations forward. I don't just support systems—I support the vision behind them.
                 </p>
               </div>
             </div>

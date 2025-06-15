@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 interface NavbarProps {
@@ -10,6 +10,8 @@ interface NavbarProps {
 
 const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navItems = [
     { name: "About", path: "/", section: "about" },
@@ -19,41 +21,85 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
     { name: "Certifications", path: "/certifications", section: "certifications" },
   ];
 
+  const handleNavClick = (item: typeof navItems[0]) => {
+    setActiveSection(item.section);
+    setIsMenuOpen(false);
+    
+    // If already on the target page, scroll to top
+    if (location.pathname === item.path) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Navigate to the page
+      navigate(item.path);
+    }
+  };
+
+  const handleContactClick = () => {
+    setActiveSection("contact");
+    setIsMenuOpen(false);
+    
+    // If already on projects page, scroll to contact section
+    if (location.pathname === "/projects") {
+      setTimeout(() => {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      // Navigate to projects page and then scroll to contact
+      navigate("/projects");
+      setTimeout(() => {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 500);
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="text-xl font-bold text-slate-800 flex items-center hover:text-blue-500 transition-colors" onClick={() => setActiveSection("about")}>
-            <span className="text-blue-500">Idah</span>
+          <Link 
+            to="/" 
+            className="text-xl font-bold text-slate-800 flex items-center hover:text-blue-400 transition-colors" 
+            onClick={() => {
+              setActiveSection("about");
+              if (location.pathname === "/") {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }}
+          >
+            <span className="text-blue-400">Idah</span>
             <span className="ml-1">Makena</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
-              <Link
+              <button
                 key={item.name}
-                to={item.path}
                 className={`text-sm font-medium transition-colors ${
-                  activeSection === item.section ? "text-blue-500" : "text-slate-600 hover:text-blue-500"
+                  activeSection === item.section ? "text-blue-400" : "text-slate-600 hover:text-blue-400"
                 }`}
-                onClick={() => setActiveSection(item.section)}
+                onClick={() => handleNavClick(item)}
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
-            <Link
-              to="/projects#contact"
-              className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 transition-colors"
-              onClick={() => setActiveSection("contact")}
+            <button
+              className="px-4 py-2 text-sm font-medium text-white bg-blue-400 rounded-md hover:bg-blue-500 transition-colors"
+              onClick={handleContactClick}
             >
               Contact
-            </Link>
+            </button>
           </nav>
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-slate-600 hover:text-blue-500"
+            className="md:hidden text-slate-600 hover:text-blue-400"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -66,30 +112,22 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
           <nav className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  to={item.path}
-                  className={`text-sm font-medium transition-colors ${
-                    activeSection === item.section ? "text-blue-500" : "text-slate-600 hover:text-blue-500"
+                  className={`text-sm font-medium transition-colors text-left ${
+                    activeSection === item.section ? "text-blue-400" : "text-slate-600 hover:text-blue-400"
                   }`}
-                  onClick={() => {
-                    setActiveSection(item.section);
-                    setIsMenuOpen(false);
-                  }}
+                  onClick={() => handleNavClick(item)}
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
-              <Link
-                to="/projects#contact"
-                className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 transition-colors text-center"
-                onClick={() => {
-                  setActiveSection("contact");
-                  setIsMenuOpen(false);
-                }}
+              <button
+                className="px-4 py-2 text-sm font-medium text-white bg-blue-400 rounded-md hover:bg-blue-500 transition-colors text-center"
+                onClick={handleContactClick}
               >
                 Contact
-              </Link>
+              </button>
             </div>
           </nav>
         )}

@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-purple-50" id="about">
+    <section className="py-16 bg-gradient-to-b from-white to-blue-50" id="about">
       <div className="container mx-auto px-6">
         <div className="flex flex-col max-w-6xl mx-auto">
           <div className="w-full">
             {/* Professional Journey Section with Background */}
-            <div className="bg-gradient-to-r from-slate-50 to-purple-100 p-10 rounded-xl shadow-lg mb-16">
+            <div className="bg-gradient-to-r from-slate-50 to-blue-100 p-10 rounded-xl shadow-lg mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-12 text-center">My Professional Story</h2>
               
               <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
@@ -35,30 +35,30 @@ const About = () => {
             </div>
 
             {/* Value Proposition Section */}
-            <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white p-10 rounded-xl shadow-lg mb-16">
+            <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 rounded-xl shadow-lg mb-16">
               <h3 className="text-3xl font-bold mb-10 text-center">Value Addition to an Organization</h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-xl font-semibold mb-4 text-purple-100">🚀 Technology-Aligned Business Transformation</h4>
-                  <p className="text-purple-50 leading-relaxed">
+                  <h4 className="text-xl font-semibold mb-4 text-blue-100">🚀 Technology-Aligned Business Transformation</h4>
+                  <p className="text-blue-50 leading-relaxed">
                     I specialize in bridging the gap between business operations and IT by driving digital transformation initiatives that streamline processes, reduce operational risk, and enhance service delivery.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold mb-4 text-blue-100">📊 Actionable Data & Insights</h4>
-                  <p className="text-blue-50 leading-relaxed">
+                  <h4 className="text-xl font-semibold mb-4 text-cyan-100">📊 Actionable Data & Insights</h4>
+                  <p className="text-cyan-50 leading-relaxed">
                     With expertise in MIS reporting, ETL optimization, and database management, I transform raw data into strategic insights that support timely decision-making and ensure regulatory compliance.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold mb-4 text-purple-100">⚡ Seamless User Experience & IT Reliability</h4>
-                  <p className="text-purple-50 leading-relaxed">
+                  <h4 className="text-xl font-semibold mb-4 text-blue-100">⚡ Seamless User Experience & IT Reliability</h4>
+                  <p className="text-blue-50 leading-relaxed">
                     I empower teams through responsive technical support and enterprise collaboration tools, ensuring systems are secure, efficient, and aligned with user needs across departments and regions.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold mb-4 text-blue-100">🔮 Continuous Innovation & Future Readiness</h4>
-                  <p className="text-blue-50 leading-relaxed">
+                  <h4 className="text-xl font-semibold mb-4 text-cyan-100">🔮 Continuous Innovation & Future Readiness</h4>
+                  <p className="text-cyan-50 leading-relaxed">
                     Committed to lifelong learning, I stay ahead of evolving technology through upskilling in cloud, cybersecurity, and AI—bringing innovative, scalable, and secure solutions to modern business challenges.
                   </p>
                 </div>
@@ -66,16 +66,16 @@ const About = () => {
             </div>
 
             {/* What I Bring Section */}
-            <div className="bg-white border-2 border-purple-200 rounded-xl p-10 shadow-lg">
-              <h3 className="text-3xl font-bold text-purple-800 mb-8 text-center">Proven Track Record of Excellence</h3>
+            <div className="bg-white border-2 border-blue-200 rounded-xl p-10 shadow-lg">
+              <h3 className="text-3xl font-bold text-blue-800 mb-8 text-center">Proven Track Record of Excellence</h3>
               <div className="grid md:grid-cols-4 gap-6">
-                <div className="text-center p-6 bg-purple-50 rounded-lg">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">99.9%</div>
-                  <div className="text-sm text-purple-700 font-medium">System Uptime Achievement</div>
-                </div>
                 <div className="text-center p-6 bg-blue-50 rounded-lg">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
-                  <div className="text-sm text-blue-700 font-medium">Process Efficiency Improvement</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">99.9%</div>
+                  <div className="text-sm text-blue-700 font-medium">System Uptime Achievement</div>
+                </div>
+                <div className="text-center p-6 bg-cyan-50 rounded-lg">
+                  <div className="text-3xl font-bold text-cyan-600 mb-2">100%</div>
+                  <div className="text-sm text-cyan-700 font-medium">Process Efficiency Improvement</div>
                 </div>
                 <div className="text-center p-6 bg-green-50 rounded-lg">
                   <div className="text-3xl font-bold text-green-600 mb-2">6</div>
@@ -88,20 +88,20 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-purple-50 border-l-4 border-purple-600 p-10 rounded-r-lg mt-12">
-              <p className="text-purple-800 font-medium text-xl leading-relaxed">
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-10 rounded-r-lg mt-12">
+              <p className="text-blue-800 font-medium text-xl leading-relaxed">
                 <strong>The Bottom Line:</strong> I'm not just a technical expert—I'm a business-minded technology strategist who understands that every IT solution must drive measurable business value. My unique combination of operational excellence, customer relationship expertise, and cutting-edge technical skills positions me to be an immediate contributor who can lead digital initiatives, optimize processes, and deliver results that matter to your bottom line.
               </p>
             </div>
 
             <div className="mt-12 flex flex-wrap justify-center gap-6">
               <Link to="/experience">
-                <Button className="bg-purple-600 hover:bg-purple-700 text-lg px-10 py-4">Explore My Experience</Button>
+                <Button className="bg-blue-600 hover:bg-blue-700 text-lg px-10 py-4">Explore My Experience</Button>
               </Link>
               <Link to="/projects#contact">
                 <Button 
                   variant="outline" 
-                  className="border-purple-600 text-purple-600 hover:bg-purple-50 text-lg px-10 py-4"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-50 text-lg px-10 py-4"
                 >
                   Let's Connect
                 </Button>

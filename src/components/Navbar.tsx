@@ -23,8 +23,8 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="text-xl font-bold text-slate-800 flex items-center hover:text-purple-600 transition-colors" onClick={() => setActiveSection("about")}>
-            <span className="text-purple-600">Idah</span>
+          <Link to="/" className="text-xl font-bold text-slate-800 flex items-center hover:text-blue-500 transition-colors" onClick={() => setActiveSection("about")}>
+            <span className="text-blue-500">Idah</span>
             <span className="ml-1">Makena</span>
           </Link>
 
@@ -35,7 +35,7 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
                 key={item.name}
                 to={item.path}
                 className={`text-sm font-medium transition-colors ${
-                  activeSection === item.section ? "text-purple-600" : "text-slate-600 hover:text-purple-600"
+                  activeSection === item.section ? "text-blue-500" : "text-slate-600 hover:text-blue-500"
                 }`}
                 onClick={() => setActiveSection(item.section)}
               >
@@ -44,7 +44,7 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
             ))}
             <Link
               to="/projects#contact"
-              className="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors"
+              className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 transition-colors"
               onClick={() => setActiveSection("contact")}
             >
               Contact
@@ -53,7 +53,7 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-slate-600 hover:text-purple-600"
+            className="md:hidden text-slate-600 hover:text-blue-500"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -70,7 +70,7 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
                   key={item.name}
                   to={item.path}
                   className={`text-sm font-medium transition-colors ${
-                    activeSection === item.section ? "text-purple-600" : "text-slate-600 hover:text-purple-600"
+                    activeSection === item.section ? "text-blue-500" : "text-slate-600 hover:text-blue-500"
                   }`}
                   onClick={() => {
                     setActiveSection(item.section);
@@ -82,7 +82,7 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
               ))}
               <Link
                 to="/projects#contact"
-                className="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors text-center"
+                className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 transition-colors text-center"
                 onClick={() => {
                   setActiveSection("contact");
                   setIsMenuOpen(false);

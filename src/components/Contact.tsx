@@ -71,30 +71,30 @@ const Contact = () => {
         
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="bg-white p-8 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-blue-700 mb-6">Contact Information</h3>
+            <h3 className="text-xl font-semibold text-blue-500 mb-6">Contact Information</h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+                <div className="p-3 bg-blue-100 rounded-full text-blue-500">
                   <Mail size={20} />
                 </div>
                 <div>
                   <h4 className="font-medium text-slate-700">Email</h4>
-                  <p className="text-blue-600">imakena@gmail.com</p>
+                  <p className="text-blue-500">imakena@gmail.com</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+                <div className="p-3 bg-blue-100 rounded-full text-blue-500">
                   <Phone size={20} />
                 </div>
                 <div>
                   <h4 className="font-medium text-slate-700">Phone</h4>
-                  <p className="text-blue-600">+254 722 124 963</p>
+                  <p className="text-blue-500">+254 722 124 963</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+                <div className="p-3 bg-blue-100 rounded-full text-blue-500">
                   <MessageSquare size={20} />
                 </div>
                 <div>
@@ -103,7 +103,7 @@ const Contact = () => {
                     href="https://wa.me/254722124963" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-500 hover:underline"
                   >
                     +254 722 124 963
                   </a>
@@ -111,7 +111,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+                <div className="p-3 bg-blue-100 rounded-full text-blue-500">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -121,7 +121,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+                <div className="p-3 bg-blue-100 rounded-full text-blue-500">
                   <Linkedin size={20} />
                 </div>
                 <div>
@@ -130,7 +130,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/imakena/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-500 hover:underline"
                   >
                     linkedin.com/in/imakena
                   </a>
@@ -138,7 +138,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+                <div className="p-3 bg-blue-100 rounded-full text-blue-500">
                   <Github size={20} />
                 </div>
                 <div>
@@ -147,7 +147,7 @@ const Contact = () => {
                     href="https://github.com/imakena2" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-500 hover:underline"
                   >
                     github.com/imakena2
                   </a>
@@ -157,7 +157,7 @@ const Contact = () => {
           </div>
           
           <div className="bg-white p-8 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-blue-700 mb-6">Send Me a Message</h3>
+            <h3 className="text-xl font-semibold text-blue-500 mb-6">Send Me a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Input
@@ -204,7 +204,7 @@ const Contact = () => {
               </div>
               <Button 
                 type="submit" 
-                className="w-full bg-blue-600 hover:bg-blue-700"
+                className="w-full bg-blue-500 hover:bg-blue-600"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Opening Email..." : "Send Message"}
